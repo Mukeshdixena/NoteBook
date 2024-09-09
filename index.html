@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Book</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <center>
+
+        <h1>Note Book</h1>
+        Search Notes
+        <input type="text" id="search">
+        <br>
+        Total Note : <span id="totalNote">0</span>
+        <br>
+        Showing : <span id="currNote">0</span>
+        <div id="notes"></div>
+    </center>
+
+    Note Title : <input type="text" id="NoteTitle">
+    <br>
+    Note Discription :
+    <br>
+    <textarea id="noteDescription" rows="6" cols="60" placeholder="Write your Notes here..."></textarea>
+
+    <br>
+    <button id="addNote" onclick="addNote()">Add Note</button>
+
+    <div id="NoteBody"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+
+    <script src="using_local_storage.js"></script>
+</body>
+</html>
